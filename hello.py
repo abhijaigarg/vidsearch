@@ -58,10 +58,7 @@ def get_results():
 		results = search(query, limit)
 
 	final_results = make_json(results)
-	final = {
-		'results': 'asdf'
-	}
-	return jsonify(final)
+	return jsonify({'results': 'asdf'})
 
 if __name__ == '__main__':
 	app.run(debug=True)
