@@ -3,6 +3,8 @@ from flask import Flask
 from flask import request, render_template
 from flask.ext.jsonpify import jsonify
 
+
+
 app = Flask(__name__)
 
 import json
@@ -57,7 +59,7 @@ def get_results():
 
 	final_results = make_json(results)
 	final = {
-		'results': final_results
+		'results': 'asdf'
 	}
 	return jsonify(final)
 
