@@ -1,7 +1,7 @@
 #!flask/bin/python
-from flask import Flask,jsonify
+from flask import Flask
 from flask import request, render_template
-# from flask.ext.jsonpify import jsonify
+from flask.ext.jsonpify import jsonify
 
 app = Flask(__name__)
 
