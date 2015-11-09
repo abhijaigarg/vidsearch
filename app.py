@@ -56,6 +56,10 @@ def get_results():
 
 	final_results = make_json(results)
 	final = {
+		'meta': {
+			'term': query,
+			'length': results.scored_length(),
+		},
 		'results': final_results
 	}
 	return jsonify(final)
